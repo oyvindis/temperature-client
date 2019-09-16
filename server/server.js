@@ -18,7 +18,7 @@ module.exports = {
     app.get('*', function(req, res) {
       res.sendFile(path.join(__dirname, '/../build/index.html'));
     });
-    app.listen(function() {
+    app.listen(app.get('port'), () => {
       console.log(`Frontend start on http://localhost:3000`);
     });
   }
