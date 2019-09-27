@@ -1,5 +1,7 @@
 FROM node:12-alpine
 
+#the only reason why we need gettext here, is that we have use envsubst in entrypoint to add env.json file
+RUN apk add --no-cache gettext
 # to run localhost docker
 RUN npm init -y
 RUN npm config set unsafe-perm true
