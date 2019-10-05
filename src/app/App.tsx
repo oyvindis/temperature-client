@@ -3,13 +3,12 @@ import { hot } from 'react-hot-loader/root';
 
 import { Router } from '../router/router.component';
 import './App.css';
+import { NavBar } from "./navbar/navbar.component";
 
 export default hot(function App() {
   return (
     <div className='App'>
-      <header>
-        <p>Test2</p>
-      </header>
+      <NavBar title="Temperature client" />
       <Router />
     </div>
   );
