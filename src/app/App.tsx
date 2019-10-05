@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import get from 'lodash/get';
 
-import { routeConfig } from './app/routeConfig';
+import { routeConfig } from './routeConfig';
 import './App.css';
 
 const App: React.FC = () => {
