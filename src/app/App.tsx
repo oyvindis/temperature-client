@@ -1,25 +1,24 @@
 import React from 'react';
+import { hot } from 'react-hot-loader/root';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import get from 'lodash/get';
 
 import { routeConfig } from './routeConfig';
 import './App.css';
 
-const App: React.FC = () => {
+export default hot(function App() {
   return (
-    <Router>
-      <div className="App">
-        <header className="App-headerx">
-          <p>Test</p>
-        </header>
+    <div className="App">
+      <header>
+        <p>Test2</p>
+      </header>
+      <Router>
         <Switch>
           {routeConfig.map((route, i) => (
             <Route key={`${i}-${get(route, 'path', '')}`} {...route} />
           ))}
         </Switch>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
-};
-
-export default App;
+});
