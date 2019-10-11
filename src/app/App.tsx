@@ -6,7 +6,7 @@ import './App.css';
 
 export default hot(function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <header>
         <p>Test2</p>
       </header>
