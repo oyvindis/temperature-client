@@ -8,7 +8,7 @@ Lage prod-versjon i docker: https://mherman.org/blog/dockerizing-a-react-app/
 To run with docker:
 
 1. Run ```docker build -t ois/temperature-client .``` to build docker image.
-2. Run ```docker run -p 3000:3000 -d ois/temperature-client``` to run docker image.
+2. Run ```docker run -p 3000:3000 -e TEMPERATURE_API_HOST=http://34.89.148.214 -t ois/temperature-client``` to run docker image.
 3. Open browser ```http://localhost:3000```
 4. Run ```docker-compose down``` to stop docker.
 

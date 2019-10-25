@@ -1,0 +1,3 @@
+window.env = {
+  TEMPERATURE_API_HOST: '$TEMPERATURE_API_HOST'
+};
