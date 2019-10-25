@@ -1,8 +1,8 @@
-import { getConfig } from '../../config';
+import env from '../../env';
 import { temperatureApiGet } from './host';
 
 export const getTemperature = (params?: object): Promise<void> =>
   temperatureApiGet({
-    url: `${getConfig().temperatureApi.host}/api/temperature/getFromDb`,
+    url: `${env.TEMPERATURE_API_HOST}/api/temperature/getFromDb`,
     params
   });
